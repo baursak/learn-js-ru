@@ -1,52 +1,43 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 </head>
-
 <body>
-  <table border="1" cellpadding="5" cellspacing="0">
-      <tr>
-          <td>11</td>
-          <td>12</td>
-          <td>13</td>
-          <td>14</td>
-          <td>15</td>
-      </tr>
-      <tr>
-          <td>21</td>
-          <td>22</td>
-          <td>23</td>
-          <td>24</td>
-          <td>25</td>
-      </tr>
-      <tr>
-          <td>31</td>
-          <td>32</td>
-          <td>33</td>
-          <td>34</td>
-          <td>35</td>
-      </tr>
-      <tr>
-          <td>41</td>
-          <td>42</td>
-          <td>43</td>
-          <td>44</td>
-          <td>45</td>
-      </tr>
-      <tr>
-          <td>51</td>
-          <td>52</td>
-          <td>53</td>
-          <td>54</td>
-          <td>55</td>
-      </tr>
-  </table>
-  <!-- комментарий -->
+    <form name="search">
+        <label>Поиск по сайту:
+            <input type="text" name="search">
+        </label>
+        <input type="submit" value="Искать!">
+    </form>
+    <hr>
+    <form name="search-person">
+        Поиск по посетителям:
+        <table id="age-table">
+            <tr>
+                <td>Возраст:</td>
+                <td id="age-list">
+                    <label>
+                        <input type="radio" name="age" value="young">до 18</label>
+                    <label>
+                        <input type="radio" name="age" value="mature">18-50</label>
+                    <label>
+                        <input type="radio" name="age" value="senior">более 50</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Дополнительно:</td>
+                <td>
+                    <input type="text" name="info[0]">
+                    <input type="text" name="info[1]">
+                    <input type="text" name="info[2]">
+                </td>
+            </tr>
 
-  <script src="script.js"></script>
-
+        </table>
+        <input type="submit" value="Искать!">
+    </form>
+    <!-- javascript -->
+    <script src="script.js"></script>
 </body>
-
 </html>
